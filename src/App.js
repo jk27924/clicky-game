@@ -7,7 +7,12 @@ import friends from "./friends.json";
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    friends
+    friends,
+    clickedFriends: [],
+    // this is to hold the ids of clicked friends in an array.
+    topScore: 0,
+    currentScore: 0
+    // put these two scores in state object, because they keep changing.
   };
 
   shuffleFriend = (friend) => {
