@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import friends from "./friends.json";
 
+
 class App extends Component {
 
   state = {
@@ -16,25 +17,25 @@ class App extends Component {
       // Put these two scores in state object, because they keep changing.
   };
 
+
   shuffleFriend = (friend) => {
     // Switched (friends) to (friend), because I use friend to pass component props to the function, and friends is the actual props from a component.
 
-  // TO DO: Write a small function that checks if a friend has already been clicked, and those clicked ones' ids need to store inside of the array clickedFriends.
+    // A Function that checks if a friend has already been clicked, and those clicked ones' ids need to store inside of the array clickedFriends.    
+    const addClickedFriends = this.state.clickedFriends;
+    addClickedFriends.push(friend.id);
 
-    // const idClicked = this.state.clickedFriends.filter(friend => friend.id);
-      // This only returns an empty array, even if numerous cards are clicked.
+    this.setState({
+      clickedFriends: addClickedFriends
+    })
+    // This changes the state to addClickedFriends..
 
-    const idClicked = this.state.friends.filter(clickedFriends => friend.id);
-      // This returns the an array full of all friends cards' ids.
+    console.log (addClickedFriends);
+    // Returns an array with clicked cards' ids stored inside.
 
-    // let idClicked = this.state.friends.indexOf(clickedFriends => friend.id);
-      // indexOf returns -1.
-
-    console.log (idClicked);
-    // console.log(idClicked);
-
-  console.log(friend.id);
+    console.log(friend.id);
     // This returns the id of selected card, NOT in an array.
+
 
   const newFriends = this.state.friends;
   // Thought I am not supposed to use const, since the cards are changing with onClick function. BUT since it is just shifting items around the same array, Using const would not matter.
@@ -54,9 +55,11 @@ class App extends Component {
     this.setState({'friends': newFriends});
   };
 
+
   handleClick = () => {
     this.setState({ friends: this.shuffleFriend(friends) });
   }; 
+
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
@@ -78,5 +81,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
