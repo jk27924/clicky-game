@@ -10,20 +10,27 @@ class App extends Component {
     friends
   };
 
-  shuffleFriend = (friends) => {
-  // use for loop to randomize the order of friend cards when showing / math.random will help randomizing / add math.floor to round up to avoid gettin zero / i + 1 is also need to avoid getting zero
-  console.log(friends);
+  shuffleFriend = (friend) => {
+  // Switched (friends) to (friend), and why?
 
-    for (var i = friends.length - 1; i > 0; i--) {
+  // Use 'for loop' to randomize the order of friend cards when showing on the DOM / math.random will help randomizing / add math.floor to round up to avoid gettin zero / i + 1 is also need to avoid getting zero.
+  console.log(friend);
+
+  const newFriends = this.state.friends;
+  // Thought I am not supposed to use const, since the cards are changing with onClick function. BUT since it is just shifting items around the same array, Using const would not matter.
+
+    for (var i = newFriends.length - 1; i > 0; i--) {
       console.log(i);
+
       var randomOrder = Math.floor(Math.random() * (i + 1));
-      var holder = friends[i];
+      var holder = newFriends[i];
       // friends[i]: it hold the actual data that I am using, which is friends.
-      friends[i] = friends[randomOrder];
-      friends[randomOrder] = holder;
+      newFriends[i] = friends[randomOrder];
+      newFriends[randomOrder] = holder;
       console.log(holder);
     }
-    return friends;
+    // return friends;
+    this.setState({'friends': newFriends});
   };
 
   handleClick = () => {
