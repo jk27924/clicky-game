@@ -20,12 +20,21 @@ class App extends Component {
     // Switched (friends) to (friend), because I use friend to pass component props to the function, and friends is the actual props from a component.
 
   // TO DO: Write a small function that checks if a friend has already been clicked, and those clicked ones' ids need to store inside of the array clickedFriends.
+
     // const idClicked = this.state.clickedFriends.filter(friend => friend.id);
-    const idClicked = this.state.clickedFriends.filter(friend => friend.id);
-    console.log(idClicked);
+      // This only returns an empty array, even if numerous cards are clicked.
 
+    const idClicked = this.state.friends.filter(clickedFriends => friend.id);
+      // This returns the an array full of all friends cards' ids.
 
-  console.log(friend);
+    // let idClicked = this.state.friends.indexOf(clickedFriends => friend.id);
+      // indexOf returns -1.
+
+    console.log (idClicked);
+    // console.log(idClicked);
+
+  console.log(friend.id);
+    // This returns the id of selected card, NOT in an array.
 
   const newFriends = this.state.friends;
   // Thought I am not supposed to use const, since the cards are changing with onClick function. BUT since it is just shifting items around the same array, Using const would not matter.
