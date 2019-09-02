@@ -19,7 +19,7 @@
   width: 100%
 }
 
-.card > .content {
+/* .card > .content {
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 15px;
@@ -44,4 +44,4 @@
 
 .card > .remove:hover {
   color: #d50000;
-}
+} */
