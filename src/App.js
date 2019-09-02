@@ -93,16 +93,20 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Friends List</Title>
+        <Title>Clicky Game with Friends</Title>
+        <h2>Click on an image to earn points, but don't click on any more than once.</h2>
+        <br/>
+        <h3 className="scoreBoard">
+          Current Score: {this.state.currentScore}  | 
+          Top Score: {this.state.topScore}
+        </h3>
+
         {this.state.friends.map(friend => (
           <FriendCard
             shuffleFriend={this.shuffleFriend}
             id={friend.id}
             key={friend.id}
-            // name={friend.name}
             image={friend.image}
-            // occupation={friend.occupation}
-            // location={friend.location}
           />
         ))}
       </Wrapper>
