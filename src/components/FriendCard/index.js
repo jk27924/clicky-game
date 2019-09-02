@@ -7,7 +7,7 @@ function FriendCard(props) {
       <div className="img-container">
         <img alt={props.name} src={props.image} />
       </div>
-      <div className="content">
+      {/* <div className="content">
         <ul>
           <li>
             <strong>Name:</strong> {props.name}
@@ -19,7 +19,7 @@ function FriendCard(props) {
             <strong>Location:</strong> {props.location}
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }
