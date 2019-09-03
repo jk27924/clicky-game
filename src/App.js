@@ -11,7 +11,7 @@ class App extends Component {
     friends, // Setting this.state.friends to the friends json array
     clickedFriends: [], // This is to hold the ids of clicked friends in an array.
     topScore: 0,
-    currentScore: 0 // Put these two scores in state object, because they keep changing.
+    currentScore: 0, // Put these two scores in state object, because they keep changing.
   };
 
 
@@ -38,6 +38,18 @@ class App extends Component {
       // Ternary: Using ? means IF statement before ? is TRUE, the left-hand will work. ELSE the right-hand will work.
       })
 
+      if (addClickedFriends.length === 12) {
+        
+        this.setState({
+          clickedFriends: [], // The array becomes empty
+          currentScore: 0, // The Current Score will be back to ZERO
+        })
+
+        alert("Congratulations! You Won!")
+
+      }
+      
+
     } else {
       // If the clicked ID is already in the array,
 
@@ -45,7 +57,7 @@ class App extends Component {
         clickedFriends: [], // The array becomes empty
         currentScore: 0, // The Current Score will be back to ZERO
       })
-      console.log("You Lost");
+      alert("Wrong guess! You Lost!");
     };
     
 
