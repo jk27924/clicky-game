@@ -87,18 +87,18 @@ class App extends Component {
   render() {
     return (
       <>
-        <Title>CLICKY GAME</Title>
-        <h1>There are 12 Friends Cards!</h1>
-        <h1>Click on an image to earn points, but don't click on any more than once!</h1>
+        <Title></Title>
+        <h1>CLICKY GAME: The MCU Heroes Edition</h1>
+        <h2>"Click on an Image to earn Points, But Don't Click on any more than Once."</h2>
         <h2 className="scoreBoard">
-          TOP SCORE: {this.state.topScore}
+          <hr/>
+          TOP SCORE # {this.state.topScore} 
           <br/>
-          <br/>
-          CURRENT SCORE: {this.state.currentScore}
+          CURRENT SCORE # {this.state.currentScore}
+          <hr/>
         </h2>
 
         <Wrapper>
-
         {this.state.friends.map(friend => (
           <FriendCard
             shuffleFriend={this.shuffleFriend}
@@ -107,7 +107,9 @@ class App extends Component {
             image={friend.image}
           />
         ))}
-      </Wrapper>
+        </Wrapper>
+
+        <Title></Title>
       </>
     );
   }
