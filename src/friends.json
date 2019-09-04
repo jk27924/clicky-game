@@ -5,46 +5,46 @@
   },
   {
     "id": 2,
-    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_captam_v2_lg.jpg"
-  },
-  {
-    "id": 3,
-    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_blkwidow_v1_lg.jpg"
-  },
-  {
-    "id": 4,
-    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_thor_v1_lg.jpg"
-  },
-  {
-    "id": 5,
-    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_bruce_v1_lg.jpg"
-  },
-  {
-    "id": 6,
-    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_captainmarvel_v2_lg.jpg"
-  },
-  {
-    "id": 7,
-    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_rocket_v2_lg.jpg"
-  },
-  {
-    "id": 8,
     "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_blkpanther_v1_lg.jpg"
   },
   {
-    "id": 9,
+    "id": 3,
+    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_captam_v2_lg.jpg"
+  },
+  {
+    "id": 4,
     "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_spiderman_v1_lg.jpg"
   },
   {
-    "id": 10,
+    "id": 5,
+    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_blkwidow_v1_lg.jpg"
+  },
+  {
+    "id": 6,
     "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_groot_v2_lg.jpg"
   },
   {
-    "id": 11,
+    "id": 7,
+    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_thor_v1_lg.jpg"
+  },
+  {
+    "id": 8,
     "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_loki_v1_lg.jpg"
   },
   {
-    "id": 12,
+    "id": 9,
+    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_bruce_v1_lg.jpg"
+  },
+  {
+    "id": 10,
     "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_drstrange_v1_lg.jpg"
+  },
+  {
+    "id": 11,
+    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_captainmarvel_v2_lg.jpg"
+  },
+  {
+    "id": 12,
+    "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/online_char_avengehonor_series_rocket_v2_lg.jpg"
   }
 ]
