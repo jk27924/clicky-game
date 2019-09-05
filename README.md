@@ -27,10 +27,10 @@ CLICKY GAME is a memory game with React. This application requires breaking up t
 ### 01_Initial Screen
 <img src="screen_shots/01_dom.png">
 
-### 02_Iron Man Clicked / Incrementing Score
+### 02_Iron Man Clicked / Incrementing Score / Shuffling Image Cards
 <img src="screen_shots/02_ironman-clicked-incrementing.png">
 
-### 03_Thor Clicked / Incrementing Score
+### 03_Thor Clicked / Incrementing Score / Shuffling Image Cards
 <img src="screen_shots/03_thor-clicked-incrementing.png">
 
 ### 04_Iron Man Clicked Again / Game Stops / Message Pop Up
