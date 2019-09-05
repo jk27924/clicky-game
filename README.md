@@ -25,4 +25,4 @@ CLICKY GAME is a memory game with React. This application requires breaking up t
 ## Screenshots of App
 
 ### 01_
-<img src="images/">
+<img src="screen_shots/01_dom.png">
